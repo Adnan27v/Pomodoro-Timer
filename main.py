@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import * #type: ignore
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -15,7 +15,7 @@ timer = None
 # ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
 
-    window.after_cancel(timer)
+    window.after_cancel(timer) #type: ignore
     canvas.itemconfig(timer_clock_text, text="00:00")
     timer_label.config(text="Timer",fg=GREEN)
     check.config(text="",fg=GREEN)
